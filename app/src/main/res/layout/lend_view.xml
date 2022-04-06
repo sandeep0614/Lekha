@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/yellow"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/lName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="3"
+                android:padding="4dp"
+                android:text="Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/lAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1.5"
+                android:padding="4dp"
+                android:text="Amount"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/lDlt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.5"
+                android:padding="4dp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_dlt"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_below="@+id/linearLayout5">
+            <TextView
+                android:id="@+id/lType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:padding="4dp"/>
+
+
+            <TextView
+                android:id="@+id/lDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="4"
+                android:padding="4dp"
+                android:text="Date"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

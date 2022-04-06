@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue2">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Add Transactions to List"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputName"
+                style="@style/TextInputEditThemeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Enter Name"
+                android:padding="5dp"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/EditName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputAmount"
+                style="@style/TextInputEditThemeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Enter Amount"
+                android:padding="5dp"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/EditAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/RadioGrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/TextInputEditThemeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/blue1"
+                    android:padding="0dp"
+                    android:text="Cleared"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/TextInputEditThemeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/red"
+                    android:padding="0dp"
+                    android:text="Borrowed"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    style="@style/TextInputEditThemeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/yellow"
+                    android:padding="0dp"
+                    android:text="Lend"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/lastLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/CancelBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:text="Cancel"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/okBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:text="Add"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
